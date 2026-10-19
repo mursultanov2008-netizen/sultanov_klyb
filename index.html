@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Клуб веб-разработки</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">Веб-клуб</a>
+      <nav aria-label="Основная навигация">
+        <a href="#topics">Темы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Учимся создавать веб-страницы</h1>
+        <p>Практикуемся, задаём вопросы и собираем свой первый проект.</p>
+        <a class="button" href="#topics">Посмотреть темы</a>
+      </div>
+    </section>
+
+    <div class="container main-grid">
+      <section id="topics" class="topics-section">
+        <h2>Что мы изучаем</h2>
+
+        <div class="filter-row">
+          <label for="category-filter">Категория тем</label>
+          <select id="category-filter">
+            <option value="all">Все темы</option>
+            <option value="layout">Вёрстка</option>
+            <option value="logic">Логика</option>
+          </select>
+        </div>
+
+        <p id="topic-count" role="status"></p>
+        <div id="topic-list" class="topics-grid"></div>
+        <noscript>Для вывода тем включите JavaScript.</noscript>
+      </section>
+
+      <aside class="sidebar">
+        <section id="contacts" class="panel contacts">
+          <h2>Как присоединиться</h2>
+          <p>Приходите в кабинет 205 после занятий.</p>
+        </section>
+
+        <section id="join" class="panel join">
+          <h2>Знакомство с участником</h2>
+          <p>Учебная демонстрация. Данные никуда не отправляются.</p>
+
+          <label for="visitor-name">Ваше имя</label>
+          <input id="visitor-name" type="text" maxlength="40">
+
+          <button id="join-button" class="button" type="button">
+            Поприветствовать
+          </button>
+
+          <p id="message" role="status">Здесь появится сообщение.</p>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Учебный проект. Автор: Имя Фамилия.</p>
+    </div>
+  </footer>
+</body>
+</html>
